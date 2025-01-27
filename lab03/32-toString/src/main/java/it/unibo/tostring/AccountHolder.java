@@ -2,8 +2,12 @@ package it.unibo.tostring;
 
 public class AccountHolder {
 
+    public static void main(final String[] args) {
+        System.out.println(new AccountHolder("Alex", "Ghini", 42));
+    }
     private final String name;
     private final String surname;
+
     private final int userID;
 
     public AccountHolder(final String name, final String surname, final int accountID) {
@@ -26,10 +30,6 @@ public class AccountHolder {
 
     public String toString() {
         // Should print name, surname, and account id.
-        return null;
-    }
-
-    public static void main(final String[] args) {
-        System.out.println(new AccountHolder("Alex", "Ghini", 42));
+        return "[name: " + this.name + ", surname: " + this.surname + ", id: " + this.userID + "]";
     }
 }

@@ -1,16 +1,16 @@
-# Costruzione di classi incapsulate e interfacce
+# Construction of Encapsulated Classes and Interfaces
 
-* Si completi la classe `SimpleBankAccount` seguendo le istruzioni riportate nei commenti della medesima
+* Complete the `SimpleBankAccount` class following the instructions provided in its comments.
 
-* Si testi l'implementazione utilizzando la classe `TestSimpleBankAccount`.
+* Test the implementation using the `TestSimpleBankAccount` class.
 
-* Si modifichi la classe `SimpleBankAccount` in modo che implementi l'interfaccia `BankAccount`, realizzando solo i metodi necessari affinché l'interfaccia risulti correttamente implementata.
-    - Si noti che per SimpleBankAccount non sono previste spese di gestione. Quindi, il metodo `chargeManagementFees()` va definito (in quanto previsto dall'interfaccia) ma avrà corpo vuoto.
+* Modify the `SimpleBankAccount` class so that it implements the `BankAccount` interface, implementing only the necessary methods to ensure the interface is properly implemented.
+    - Note that for `SimpleBankAccount`, there are no management fees. Therefore, the method `chargeManagementFees()` should be defined (as required by the interface), but its body should be empty.
 
-* Si implementi in autonomia la classe `StrictBankAccount`, tale che:
-    - `StrictBankAccount` implementa `BankAccount`
-    - Le operazioni sul conto dovranno essere abilitate solo se lo user id corrisponde a quello a cui il conto è stato associato
-    - Non dovrà essere possibile effettuare dei prelievi se l'ammontare da prelevare specificato è superiore alla disponibilità corrente del conto. Se il caso si verifica, le operazioni di prelievo non dovranno fare nulla.
-    - Le spese di gestione dovranno essere calcolate come segue: al costo fisso di 5 Euro andrà aggiunto un costo variabile di 0.1 euro per ciascuna transazione effettuata
+* Implement the `StrictBankAccount` class independently, such that:
+    - `StrictBankAccount` implements `BankAccount`
+    - Account operations should only be enabled if the user ID matches the one associated with the account.
+    - Withdrawals should not be allowed if the specified withdrawal amount exceeds the available balance in the account. If this occurs, the withdrawal operation should do nothing.
+    - The management fees should be calculated as follows: in addition to a fixed cost of 5 Euros, a variable cost of 0.1 Euros should be added for each transaction performed.
 
-* Effettuare il test di `StrictBankAccount` seguendo le indicazioni fornite ed i commenti in `TestBankAccount`
+* Perform the test of `StrictBankAccount` following the instructions provided and the comments in `TestBankAccount`.

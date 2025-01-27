@@ -1,13 +1,14 @@
-# Implementare un nuovo sistema da capo
+# **Implement a New System from Scratch**
 
-## Shape e circle
+#### **Shape and Circle**
 
-* Si definisca *da zero* una nuova interfaccia `it.unibo.shapes.api.Shape` che modella una qualunque figura geometrica bidimensionale, che consenta il calcolo di area e perimetro.
-* Si implementi la classe `it.unibo.shapes.impl.Circle`, che implementa `Shape`, e che modella il cerchio. Si faccia particolare attenzione alla scelta dei campi, scegliendo quelli strettamente necessari.
-* Si ricorda che la classe `java.lang.Math` ha un campo statico pubblico `PI` che contiene il valore di π. Si ricorda inoltre che il perimetro di un cerchio di raggio r può esser calcolato come 2πr, e che l'area del cerchio è calcolabile come πr².
+- **Define a new interface `it.unibo.shapes.api.Shape`** from scratch, modeling any two-dimensional geometric figure that allows the calculation of area and perimeter.
+- **Implement the class `it.unibo.shapes.impl.Circle`**, which implements `Shape`, and models a circle. Pay special attention to choosing the fields that are strictly necessary.
+  - Remember that the class `java.lang.Math` has a public static field `PI` that contains the value of π. Also, recall that the perimeter of a circle with radius r can be calculated as \(2\pi r\), and the area of a circle can be calculated as \(\pi r^2\).
 
-## Poligoni
+#### **Polygons**
 
-* Si crei una nuova interfaccia `it.unibo.shapes.api.Polygon` che estende `Shape`, modellando l'idea di figure geometriche con un numero finito di lati (poligoni). In particolare, l'interfaccia abbia un metodo `int getEdgeCount()` che restituisce il suddetto numero.
-* Si implementino le classi `it.unibo.shapes.impl.Square`, `it.unibo.shapes.impl.Rectangle`, e `it.unibo.shapes.impl.Triangle`. Tutte implementano `Polygon`.
-* Una volta terminata l'implementazione, si scriva un test `it.unibo.shapes.test.WorkWithShapes` nel quale si creano varie figure geometriche (almeno una per tipo) e se ne stampa l'area ed il perimetro.
+- **Create a new interface `it.unibo.shapes.api.Polygon`** that extends `Shape`, modeling the idea of geometric figures with a finite number of sides (polygons). Specifically, the interface should have a method:
+  - `int getEdgeCount()` that returns the number of sides.
+- **Implement the classes `it.unibo.shapes.impl.Square`, `it.unibo.shapes.impl.Rectangle`, and `it.unibo.shapes.impl.Triangle`**. All of them should implement `Polygon`.
+- Once the implementation is complete, create a test class `it.unibo.shapes.test.WorkWithShapes` where you create various geometric figures (at least one of each type) and print their area and perimeter.
