@@ -1,38 +1,38 @@
-# Completamento di una classe mediante aggiunta/implementazione di membri (campi, metodi)
+# Completing a Class by Adding/Implementing Members (Fields, Methods)
 
-Si prega di *non modificare*:
+Please *do not modify*:
 
-* I nomi dei metodi
-* Il tipo di ritorno dei metodi
+* The method names
+* The return type of the methods
 
-## FASE 1
+## PHASE 1
 
-1. Si completi la classe `Student` aggiungendo:
-  * Campi:
-    - `String name`
-    - `String surname`
-    - `int id` (rappresentante la matricola)
-    - `int matriculationYear`
-  * Metodi:
-    - `void build(String, String, int, int)`:
-      inizializza l'oggetto di tipo `Student` con i parametri forniti in input. Essi sono, in ordine:
-      - il nome,
-      - il cognome,
-      - la matricola, e
-      - l'anno di immatricolazione
-    - `void printStudentInfo()`:
-      stampa in standard output le informazioni relative allo studente, ossia:
-      - il suo nome e cognome,
-      - il numero di matricola, e
-      - l'anno di immatricolazione)
-2. Si compili la classe `Student` verificando che non vi siano problemi di compilazione
+1. Complete the `Student` class by adding:
+   * Fields:
+     - `String name`
+     - `String surname`
+     - `int id` (representing the student’s ID number)
+     - `int matriculationYear`
+   * Methods:
+     - `void build(String, String, int, int)`:
+       Initializes the `Student` object with the provided input parameters, which are:
+       - the first name,
+       - the last name,
+       - the ID number, and
+       - the matriculation year.
+     - `void printStudentInfo()`:
+       Prints to standard output the student’s information, i.e.:
+       - their full name,
+       - the student ID number, and
+       - the matriculation year.
+2. Compile the `Student` class and verify there are no compilation issues.
 
-## FASE 2
+## PHASE 2
 
-1. Si modifichi il metodo `main` della classe `TestStudent` come segue:
-  - Creare dei nuovi oggetti relativi agli studenti:
-      - Nome: Alex, Cognome: Balducci, id: 1015, anno di immatricolazione: 2019
-      - Nome: Angel, Cognome: Bianchi, id: 1016, anno di immatricolazione: 2018
-      - Nome: Andrea, Cognome: Bracci, id: 1017, anno di immatricolazione: 2017
-2. Si stampino a video le informazioni relative a ciascuno studente usando l'apposito metodo.
-3. Si compilino i sorgenti, e si esegua `TestStudent`
+1. Modify the `main` method of the `TestStudent` class as follows:
+   - Create new student objects with the following details:
+     - Name: Alex, Surname: Balducci, ID: 1015, Matriculation Year: 2019
+     - Name: Angel, Surname: Bianchi, ID: 1016, Matriculation Year: 2018
+     - Name: Andrea, Surname: Bracci, ID: 1017, Matriculation Year: 2017
+2. Print the information of each student using the appropriate method.
+3. Compile the source files and run `TestStudent`.

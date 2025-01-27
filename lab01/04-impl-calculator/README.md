@@ -1,24 +1,24 @@
-# Implementazione "from scratch" di una semplice calcolatrice e di un programma che la esercita
+# "From Scratch" Implementation of a Simple Calculator and a Program That Uses It
 
-## FASE 1
+## PHASE 1
 
-1. Si implementi autonomamente la classe `Calculator` che realizza una semplice calcolatrice in grado di lavorare su numeri `double`, che possegga:
-  * Campi: nessuno (in qualche modo questa classe è "degenere" in OOP)
-  * Metodi:
-    - `double add(double, double)`: addizione
-    - `double sub(double, double)`: sottrazione
-    - `double mul(double, double)`: moltiplicazione
-    - `double div(double, double)`: divisione
-2. Si testi il comportamento della classe seguendo le linee guida in `TestCalculator`
+1. **Implement the `Calculator` class**, which will implement a simple calculator capable of working with `double` values. The class should have:
+   * **Fields**: None (this class is somewhat "degenerate" in OOP terms).
+   * **Methods**:
+     - `double add(double, double)`: performs addition.
+     - `double sub(double, double)`: performs subtraction.
+     - `double mul(double, double)`: performs multiplication.
+     - `double div(double, double)`: performs division.
+2. **Test the behavior of the class** by following the guidelines provided in the `TestCalculator` class.
 
-## FASE 2
+## PHASE 2
 
-3. Si modifichi la classe `Calculator` aggiungendo:
-  * Campi:
-    - `int nOpDone` (conta il numero di operazioni compiute dalla calcolatrice)
-    - `double lastRes` (memorizza l'ultimo risultato computato)
-  * Metodi:
-    - `void build()` (inizializza a zero i due campi)
-  * Modifiche ai metodi esistenti
-    - Si modifichino i metodi esistenti per far sì che utilizzino opportunamente i due nuovi campi della classe
-4. Si verifichi il funzionamento della nuova calcolatrice modificando `TestCalculator` in modo che stampi il valore dei due nuovi campi dopo ogni operazione.
+3. **Modify the `Calculator` class by adding the following**:
+   * **Fields**:
+     - `int nOpDone`: counts the number of operations performed by the calculator.
+     - `double lastRes`: stores the last result computed.
+   * **Methods**:
+     - `void build()`: initializes both fields to zero.
+   * **Modify existing methods**:
+     - Update the existing methods so that they appropriately use the two new fields (`nOpDone` and `lastRes`).
+4. **Verify the functionality of the new calculator** by modifying `TestCalculator` to print the values of the two new fields after each operation.

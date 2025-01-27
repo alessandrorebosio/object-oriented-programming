@@ -2,7 +2,7 @@ class Scopes {
     int a;
     int b;
 
-    void build(int a, int b) {
+    void build(final int a, final int b) {
         this.a = a;
         this.b = b;
         System.out.print("[build method:] I can access the field a (" + this.a + "),");
@@ -11,14 +11,14 @@ class Scopes {
         System.out.println(" and the input parameter b (" + b + ").");
     }
 
-    void dummyMethod(int c) {
+    void dummyMethod(final int c) {
         System.out.print("[dummyMethod:] I can access the field a (" + this.a + "),");
         System.out.print(" the field b (" + this.b + ")");
         System.out.println(" and the input parameter c (" + c + ").");
     }
 
-    void dummyMethod2(int a) {
-        int b = 0;
+    void dummyMethod2(final int a) {
+        final int b = 0;
         System.out.print("[dummyMethod2:] I can access the field a (" + this.a + "),");
         System.out.print(" the field b (" + this.b + "),");
         System.out.print(" the input parameter a (" + a + "),");

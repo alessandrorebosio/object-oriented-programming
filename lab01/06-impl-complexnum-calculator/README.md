@@ -1,15 +1,16 @@
-# Implementazione di una calcolatrice che lavora con numeri complessi
+# Implementing a Calculator for Complex Numbers
 
+1. Implement a Java class `ComplexNumCalculator` that functions as a calculator for complex numbers. It should operate on complex numbers represented by the `ComplexNum` class (copy the previously implemented `ComplexNum` class into this folder to use it during compilation) with the following features:
+   * Fields:
+     - `int nOpDone` (number of operations performed)
+     - `ComplexNum lastRes` (last result)
+   * Methods:
+     - `void build()` (initialization method)
+     - `ComplexNum add(ComplexNum, ComplexNum)` (addition)
+     - `ComplexNum sub(ComplexNum, ComplexNum)` (subtraction)
+     - `ComplexNum mul(ComplexNum, ComplexNum)` (multiplication)
+     - `ComplexNum div(ComplexNum, ComplexNum)` (division)
+   
+2. Complete the `TestComplexNumCalculator` class according to the comments inside it.
 
-1. Implementare una classe Java `ComplexNumCalculator` che realizzi una calcolatrice per numeri complessi, in grado di operare sui numeri complessi rappresentati dalla classe `ComplexNum` (si copi in questa cartella la classe ComplexNum realizzata in precedenza per poterla utilizzare in fase di compilazione), con le seguenti caratteristiche:
-  * Campi:
-    - `int nOpDone`
-    - `ComplexNum lastRes`
-  * Metodi:
-    - `void build()`
-    - `ComplexNum add(ComplexNum, ComplexNum)`: addizione
-    - `ComplexNum sub(ComplexNum, ComplexNum)`: sottrazione
-    - `ComplexNum mul(ComplexNum, ComplexNum)`: moltiplicazione
-    - `ComplexNum div(ComplexNum, ComplexNum)`: divisione
-2. Si completi la classe `TestComplexNumCalculator` seguendo i commenti in essa contenuti
-3. Si compili e si esegua
+3. Compile and run the program.

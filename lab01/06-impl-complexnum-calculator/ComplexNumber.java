@@ -1,4 +1,4 @@
-class ComplexNum {
+class ComplexNumber {
     double re;
     double im;
 
@@ -7,11 +7,11 @@ class ComplexNum {
         this.im = im;
     }
 
-    boolean equal(final ComplexNum num) {
+    boolean equal(final ComplexNumber num) {
         return (re == num.re) && (im == num.im);
     }
 
-    void add(final ComplexNum num) {
+    void add(final ComplexNumber num) {
         re += num.re;
         im += num.im;
     }

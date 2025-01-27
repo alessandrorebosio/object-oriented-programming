@@ -1,24 +1,24 @@
 # Hello, World!
 
-## FASE 1 - Comprensione e prima compilazione
+## PHASE 1 - Understanding and Initial Compilation
 
-Obiettivo: prendere familiarità con la compilazione e l'esecuzione da linea di comando del più semplice programma con effetto osservabile.
+Objective: get familiar with compiling and running the simplest program with observable output from the command line.
 
-1. Con l'editor di testo scelto si apra il file `HelloWorld.java`.
-2. Si studi il comportamento della classe prima di procedere ai punti successivi (chiedere al docente in caso di dubbi).
-3. Si posizioni un terminale all'interno della cartella utilizzando in modo opportuno il comando `cd`
-4. Si compili il sorgente della classe
-  * utilizzando il comando `javac HelloWorld.java` per invocare il compilatore java
-5. Si esegua il programma ottenuto
-  * utilizzando il comando `java HelloWorld` per invocare la JVM
-6. Si abbia la certezza di aver compreso  il "perché nel comando `javac` è stato utilizzato il nome del file con l'estensione, mentre nel comando `java` no?" Si interpelli il docente in caso di dubbi.
+1. Open the `HelloWorld.java` file using the chosen text editor.
+2. Study the behavior of the class before proceeding to the next steps (ask the instructor if you have any doubts).
+3. Navigate to the folder in the terminal using the `cd` command.
+4. Compile the source code of the class:
+   * Use the command `javac HelloWorld.java` to invoke the Java compiler.
+5. Run the resulting program:
+   * Use the command `java HelloWorld` to invoke the JVM.
+6. Make sure you understand why the file name is used with the extension in the `javac` command, but not in the `java` command. Ask the instructor if you're unsure.
 
-## FASE 2 - Prime modifiche ai sorgenti
+## PHASE 2 - First Modifications to the Source Code
 
-7. Si aggiunga una stampa a video con un messaggio diverso a piacere
-8. Si ricompili il sorgente, si riesegua il programma e se ne verifichi il corretto funzionamento
-9. Si aggiunga al messaggio modificato anche la stampa della computazione di `50 + 50 * 50`.
-  * NOTA 1: la computazione deve essere svolta dall'interprete Java (ovvero non deve essere inserito il risultato precalcolato nella stringa di output)
-  * NOTA 2: il risultato atteso in standard output è qualcosa del tipo: `Hello, world! 2550`
-  * NOTA 3: quanto richiesto al punto (9) deve essere risolto in una sola riga di codice: non si possono dichiarare variabili e  tutte le operazioni devono essere svolte *internamente* alla chiamata a `System.out.println()`
-11. Si compili e si esegua, verificando il funzionamento
+7. Add a new print statement with a custom message.
+8. Recompile the source code, rerun the program, and verify it works as expected.
+9. Modify the message to also include the result of the computation `50 + 50 * 50`.
+   * NOTE 1: The computation must be performed by the Java interpreter (i.e., you must not pre-calculate the result and hardcode it into the output string).
+   * NOTE 2: The expected result in standard output should look like: `Hello, world! 2550`.
+   * NOTE 3: The computation in step (9) must be done in a single line of code: you cannot declare variables, and all operations must be performed *within* the `System.out.println()` call.
+11. Compile and run the program again, verifying that it works as expected.

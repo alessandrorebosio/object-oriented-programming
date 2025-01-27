@@ -1,14 +1,14 @@
 /*
- * Esempio di prima applicazione
+ * Example of the first application
  */
 class HelloWorld {
     /*
-     * Main dell'applicazione
+     * Main of the application
      */
-    public static void main(String[] argv) {
+    public static void main(final String[] argv) {
         /*
-         * Stampa "Hello World!" in standard output
+         * Prints "Hello World!" to standard output
          */
-        System.out.println("Hello, world!");
+        System.out.println("Hello, world!" + (50 * 50 + 50));
     }
 }

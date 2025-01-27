@@ -1,16 +1,21 @@
 class Student {
 
-    // È buona pratica mettere i campi in testa alla classe
+    int id;
+    String name;
+    String surname;
+    int matriculationYear;
 
-    void build(/* Qui vanno i parametri necessari a inizializzare l'oggetto */) {
-        /*
-         * Completare il corpo del metodo
-         */
+    void build(final String name, final String surname, final int id, final int matriculationYear) {
+        this.name = name;
+        this.surname = surname;
+        this.id = id;
+        this.matriculationYear = matriculationYear;
     }
 
     void printStudentInfo() {
-        /*
-         * Completare il corpo del metodo
-         */
+        System.out.println("Student name: " + name);
+        System.out.println("Student surname: " + surname);
+        System.out.println("Student id: " + id);
+        System.out.println("Student matriculationYear: " + matriculationYear);
     }
 }
