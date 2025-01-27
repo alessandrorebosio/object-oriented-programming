@@ -6,11 +6,27 @@ class Train {
     static final int DEFAULT_N_SC_SEATS = 100;
     static final int DEFAULT_TOT_SEATS = 150;
 
-    int seats;
-    int firstClassSeats;
-    int secondClassSeats;
+    final int seats;
+    final int firstClassSeats;
+    final int secondClassSeats;
     int firstClassReserved;
     int secondClassReserved;
+
+    Train() {
+        this(DEFAULT_TOT_SEATS, DEFAULT_N_FC_SEATS, DEFAULT_N_SC_SEATS);
+    }
+
+    Train(final int nFCSeats, final int nSCSeats) {
+        this(nFCSeats + nSCSeats, nFCSeats, nSCSeats);
+    }
+
+    Train(final int nTotSeats, final int nFCSeats, final int nSCSeats) {
+        this.seats = nTotSeats;
+        this.firstClassSeats = nFCSeats;
+        this.secondClassSeats = nSCSeats;
+        this.firstClassReserved = 0;
+        this.firstClassReserved = 0;
+    }
 
     void deleteAllReservations() {
         this.firstClassReserved = 0;

@@ -5,8 +5,8 @@ class CallByValue {
     }
 
     public static void main(final String[] args) {
-        int x = 1;
-        CallByValue cbv = new CallByValue();
+        final int x = 1;
+        final CallByValue cbv = new CallByValue();
         cbv.increment(x);
         System.out.println("x=" + x);
     }

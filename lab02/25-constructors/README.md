@@ -1,22 +1,22 @@
-# FASE 1 - Costruttori
+# PHASE 1 - Constructors
 
-1. Si osservino e poi si rimuovano dalla classe `Student` il metodo `void main(String[])` ed il metodo `void build(...)`
-    - Si noti come tra l'istanziazione di uno `Student` e la sua "costruzione" mediante `build` l'oggetto si trovi in uno stato semanticamente inconsistente
-2. Si implementi un costruttore a zero argomenti per `Train`
-    - I campi dovranno essere inizializzati con valori di default *sensati* a vostra scelta
-3. Si implementi un costruttore con un set minimale di parametri atto ad inizializzare un'istanza della classe
-4. Si implementi in autonomia il costruttore della classe `Student`
-5. Si seguano le istruzioni riportate in `UseConstructors`
-6. Facendo riferimento a quanto discusso a lezione circa la possibilità di richiamare costruttori esistenti nel corpo di un altro costruttore tramite istruzione `this`, si modifichi il costruttore a zero argomenti di Train in modo che riusi quello che accetta parametri per l'inizializzazione.
-7. Si crei (se non già realizzato) un costruttore `Train(int, int)` dove gli argomenti passati siano i posti in prima e seconda classe, rispettivamente.
-8. Si seguano le istruzioni in `UseConstructorsEvolved` per effettuare il test.
+1. Observe and then remove the `void main(String[])` and `void build(...)` methods from the `Student` class.
+    - Note how, between the instantiation of a `Student` and its "construction" using `build`, the object is in a semantically inconsistent state.
+2. Implement a no-argument constructor for `Train`.
+    - The fields should be initialized with default *reasonable* values of your choice.
+3. Implement a constructor with a minimal set of parameters to initialize an instance of the class.
+4. Independently implement the constructor for the `Student` class.
+5. Follow the instructions in `UseConstructors`.
+6. Referring to the lesson discussion about calling existing constructors in the body of another constructor using the `this` statement, modify the no-argument constructor of `Train` to reuse the one that accepts parameters for initialization.
+7. Create (if not already done) a `Train(int, int)` constructor where the arguments passed are the first-class and second-class seats, respectively.
+8. Follow the instructions in `UseConstructorsEvolved` to run the test.
 
-# FASE 2 - Esercizio più avanzato
+# PHASE 2 - More Advanced Exercise
 
-1. Si completi la classe `Smartphone` con i seguenti costruttori:
+1. Complete the `Smartphone` class with the following constructors:
     - `Smartphone(String brand, String model)`
     - `Smartphone(String brand, String model, boolean hasGPS, boolean has3g)`
     - `Smartphone(String brand, String model, int sdSize)`
     - `Smartphone(String brand, String model, boolean hasNFC)`
-    - Costruttore con un argomento per campo (NB: ci si assicuri di usare `this` per richiamare i costruttori esistenti)
-2. Si utilizzino i commenti riportati nel `main` della classe per scrivere un test ed eseguirlo.
+    - Constructor with one argument for each field (NOTE: be sure to use `this` to call existing constructors).
+2. Use the comments in the `main` method of the class to write a test and execute it.

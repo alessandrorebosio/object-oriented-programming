@@ -1,18 +1,16 @@
-# Compilazione e package
+# Compilation and Packaging
 
-## Compilazione ed esecuzione da posizioni arbitrarie di classi contenute in package
+## Compilation and Execution from Arbitrary Locations of Classes Contained in Packages
 
-1. Si osservi il contenuto della cartella `src`. Si noti come non contenga direttamente sorgenti Java ma una gerarchia di cartelle; all'interno dell'ultima cartella è presente un file sorgente.
-2. Si visualizzi il contenuto del file sorgente (ad es. con `cat`/`head` in Unix o `type` in Windows) e si noti come il package della classe corrisponda alla struttura delle directory che contengono il file sorgente
-    - **Nota**: è buona norma organizzare i sorgenti in modo che la loro struttura sul file system replichi la struttura dei package. Si noti però che, **poiché il compilatore lavora su file**, tale scelta non è strettamente obbligatoria
-3. Si posizioni il terminale in modo che punti alla cartella che *contiene* `src`;
-ovvero, la cartella in cui il comando `ls` (o `dir` in ambiente Windows)
-restituisce, fra i contenuti, anche `src`.
-4. Si esegua la compilazione del file `ComplexNum.java` all'interno di una nuova cartella `bin/`
-5. Si faccia una previsione circa il contenuto di `bin` (in termini di quali cartelle e quali file vi saranno all'interno)
-6. Si verifichi la propria previsione.
-7. Si esegua la classe usando il comando: `java -cp bin ComplexNum`
-    - Oh-oh... errore. Perché? Si provi a comprenderne la ragione e a correggere il comando.
-8. Si punti il terminale in `bin/compilation/lab/math/`
-9. Si provi ad eseguire la classe usando il comando: `java ComplexNum`
-    - Oh-oh... errore. Perché? Eppure il file `ComplexNum.class` è proprio lì. Si provi a comprenderne la ragione e a correggere il comando.
+1. Observe the content of the `src` folder. Note how it doesn't directly contain Java source files but rather a hierarchy of folders; inside the last folder, there is a source file.
+2. View the contents of the source file (e.g., using `cat`/`head` on Unix or `type` on Windows) and note that the class's package corresponds to the directory structure that contains the source file.
+    - **Note**: It's good practice to organize your source files so that their file system structure replicates the package structure. However, since the compiler works with files, this choice is not strictly required.
+3. Position the terminal to point to the folder that *contains* `src`; that is, the folder where the `ls` (or `dir` on Windows) command will list `src` among its contents.
+4. Compile the `ComplexNum.java` file inside a new `bin/` folder.
+5. Make a prediction about the contents of `bin` (in terms of which folders and files will be inside).
+6. Verify your prediction.
+7. Run the class using the command: `java -cp bin ComplexNum`
+    - Uh-oh... error. Why? Try to understand the reason and correct the command.
+8. Change the terminal to `bin/compilation/lab/math/`.
+9. Try running the class using the command: `java ComplexNum`
+    - Uh-oh... error. Why? The `ComplexNum.class` file is right there. Try to understand the reason and correct the command.

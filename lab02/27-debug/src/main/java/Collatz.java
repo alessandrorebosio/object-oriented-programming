@@ -1,5 +1,5 @@
 public class Collatz {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // 670617279
         var number = args.length > 0 ? Integer.parseInt(args[0]) : 1;
         System.out.println("Collatz sequence for " + number + ":");

@@ -1,6 +1,6 @@
-# Passaggio degli argomenti per valore o riferimento
+# Passing Arguments by Value or by Reference
 
-1. Si preveda l'output di `CallByValue`, `CallByReference1` e `CallByReference2`
-2. Si scriva su un foglio l'output previsto
-3. Si compili e si esegua per verificare la previsione
-4. Se la previsione non è corretta, chiedere al docente una spiegazione
+1. Predict the output of `CallByValue`, `CallByReference1`, and `CallByReference2`.
+2. Write the predicted output on a sheet of paper.
+3. Compile and run the program to verify your prediction.
+4. If the prediction is incorrect, ask the instructor for an explanation.

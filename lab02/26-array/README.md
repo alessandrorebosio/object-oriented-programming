@@ -1,79 +1,76 @@
-# Esercizio con array
+# Exercise with Arrays
 
-# FASE 1 - Arrays, le basi
+### PHASE 1 - Arrays, the Basics
 
-1. Si analizzi il metodo `countOccurencies(int[]. int)` della classe `WorkWithArrays`,
-aiutandosi con l'utilità di test `boolean testCountOccurrencies()`
-2. Si compili ed esegua la classe
-3. Si aggiunga un nuovo test al metodo `testCountOccurrencies()`
-4. Si compili e si esegua nuovamente
-5. Si completino i seguenti metodi statici nella classe `WorkWithArrays`:
-   - `static int[] evenElements(int[] array)`,
-   che restituisce un array con i soli elementi in posizione (indice) *pari* dell'array fornito in input,
-   ad esempio: `evenElems([1, 2, 3, 4]) => [1, 3]`
-   - `static int[] oddElements(int[] array)`,
-   che restituisce un array con i soli elementi in posizione (indice) *dispari*
-   dell'array fornito in input, ad esempio: `oddElems([1, 2, 3, 4] => [2,4]`
-   - `static int mostRecurringElement(int[] array)`,
-   che restituisce l'elemento che viene ripetuto più volte all'interno dell'`array`,
-   - ad esempio:
-     - `mostRecurringElement([1, 2, 1, 3, 4] => 1`,
-     - `mostRecurringElement([7,1,5,7,7,9]) => 7`
+1. Analyze the method `countOccurencies(int[], int)` in the class `WorkWithArrays`, using the test utility `boolean testCountOccurrencies()`.
+2. Compile and run the class.
+3. Add a new test to the method `testCountOccurrencies()`.
+4. Compile and run it again.
+5. Complete the following static methods in the `WorkWithArrays` class:
+   - `static int[] evenElements(int[] array)`,  
+     which returns an array containing only the elements at *even* positions (indices) of the input array.  
+     Example: `evenElems([1, 2, 3, 4]) => [1, 3]`.
+   - `static int[] oddElements(int[] array)`,  
+     which returns an array containing only the elements at *odd* positions (indices) of the input array.  
+     Example: `oddElems([1, 2, 3, 4]) => [2, 4]`.
+   - `static int mostRecurringElement(int[] array)`,  
+     which returns the element that is repeated the most times within the array.  
+     Example:  
+     `mostRecurringElement([1, 2, 1, 3, 4]) => 1`,  
+     `mostRecurringElement([7, 1, 5, 7, 7, 9]) => 7`.
 
-#### FASE 2 - Riconoscitore di sequenze
+### PHASE 2 - Sequence Recognizer
 
-1. La classe `SeqRecognizer` implementa un riconoscitore di varie sequenze di caratteri.
-Si analizzi il primo esempio già implementato `boolean checkSeq1(int[] array)` che riconosce la sequenza {1}{2|3},
-ossia, una qualunque sequenza (anche vuota) di 1 seguita da una qualunque sequenza (anche vuota) di 2 o 3.
-Strategia risolutiva in linguaggio naturale:
-    1. Finché trovo una sequenza di uno, vado avanti nell’array
-    2. Finché trovo dei due o dei tre, vado avanti nell’array
-    3. Verifico di essere arrivato in fondo
-2. Si scriva il metodo `static boolean checkSeq2(int[] array)`,
-che riconosce la sequenza 1{2}3, ossia una occorrenza di 1, 
-seguita da una qualunque sequenza (anche vuota) di 2, seguita da un 3.
-3. Si scriva il metodo `static boolean checkSeq3(int[] array)`,
-che riconosce la sequenza 1{2}3{4}[5],
-ossia una occorrenza di 1 , seguita da una qualunque sequenza (anche vuota) di 2, seguita da un 3,
-seguita da una qualunque sequenza (anche vuota) di 4,
-seguita opzionalmente da un 5
-4. Si scriva il metodo `static boolean checkSeq4(int[] array)`,
-che riconosce la sequenza [2|3]{4}5
+1. The class `SeqRecognizer` implements a recognizer for various character sequences.  
+   Analyze the first implemented example `boolean checkSeq1(int[] array)`, which recognizes the sequence {1}{2|3},  
+   that is, any sequence (even empty) of 1s followed by any sequence (even empty) of 2s or 3s.  
+   Problem-solving strategy in natural language:
+    1. While I find a sequence of 1s, I continue through the array.
+    2. While I find 2s or 3s, I continue through the array.
+    3. I check if I have reached the end.
+2. Write the method `static boolean checkSeq2(int[] array)`,  
+   which recognizes the sequence 1{2}3, i.e., one occurrence of 1,  
+   followed by any sequence (even empty) of 2s, followed by a 3.
+3. Write the method `static boolean checkSeq3(int[] array)`,  
+   which recognizes the sequence 1{2}3{4}[5],  
+   i.e., one occurrence of 1, followed by any sequence (even empty) of 2s, followed by a 3,  
+   followed by any sequence (even empty) of 4s, followed optionally by a 5.
+4. Write the method `static boolean checkSeq4(int[] array)`,  
+   which recognizes the sequence [2|3]{4}5.
 
-#### FASE 3 - Inversione e duplicazione
+### PHASE 3 - Reversion and Duplication
 
-Implementare il metodo `static int[] revertUpTo(int[] array, int element)` in `WorkWithArrays`,
-che inverte gli elementi di `array` dall'inizio fino alla prima occorrenza dell'elemento `element` *inclusa*.
-Gli elementi successivi alla suddetta occorrenza devono rimanere invariati, per esempio `revertUpTo([1,2,3,4,5,6,7], 5) => [5,4,3,2,1,6,7]`
+Implement the method `static int[] revertUpTo(int[] array, int element)` in `WorkWithArrays`,  
+which reverses the elements of `array` from the start up to and including the first occurrence of the element `element`.  
+The elements after that occurrence should remain unchanged.  
+Example: `revertUpTo([1,2,3,4,5,6,7], 5) => [5, 4, 3, 2, 1, 6, 7]`.
 
-#### FASE 4 - Array di oggetti
+### PHASE 4 - Array of Objects
 
-Completare la classe `PlayWithSmartphoneArrays`, che lavora sulla classe `Smartphone` fornita,
-implementando i seguenti metodi che restituiscono il numero di smartphone che rispettano le preferenze fornite dagli utenti:
+Complete the class `PlayWithSmartphoneArrays`, which works with the provided `Smartphone` class,  
+implementing the following methods that return the number of smartphones matching the user-provided preferences:
 
 1. `static int search(Smartphone[] array, String brand)`
 2. `static int search(Smartphone[] array, boolean hasNFC, boolean hasGPS)`
 3. `static int search(Smartphone[] array, int nCPUs, int sdSize, boolean has3G)`
 
-#### FASE 5 - Algoritmica su array
+### PHASE 5 - Algorithmic Operations on Arrays
 
-1. Implementare `static int[] sortArray(int[] array, boolean isDescending)` all'interno di `WorkWithArrays`,
-che ordina l'array fornito in input
-(ordinamento crescente/descrescente a seconda del valore del parametro `isDescending`.
-    - Si può far riferimento all'algoritmo bubble sort
-    - è proibito l'uso del metodo di libreria `Arrays.sort()` :)
-2. Implementare `static double computeVariance(double[] array)`,
-che calcola la varianza degli elementi di un array
+1. Implement `static int[] sortArray(int[] array, boolean isDescending)` within `WorkWithArrays`,  
+   which sorts the provided array (in ascending/descending order based on the value of the `isDescending` parameter).  
+   - You can refer to the bubble sort algorithm.  
+   - The use of the library method `Arrays.sort()` is prohibited. :)
+2. Implement `static double computeVariance(double[] array)`,  
+   which calculates the variance of the elements in the array.
 
-#### FASE 6 - Array circolare
+### PHASE 6 - Circular Array
 
-Completare la classe `MyCircularArray` che implementa un array circolare, contenente:
-    - Un campo `int[] array`;
-    - Costruttore `MyCircularArray(int size)` che crea un array circolare di dimensione `size`;
-    - Costruttore `MyCircularArray()` che crea un array circolare di 10 elementi;
-    - metodo `void add(int element)`, che aggiunge `element` all'interno di `array` in modo che,
-    una volta raggiunta la dimensione massima dell'array,
-    i nuovi valori vadano a sovrascrivere quelli precedentemente memorizzati;
-    - metodo `void reset()`, che reinizializza a zero tutti gli elementi di `array`.
+Complete the class `MyCircularArray`, which implements a circular array, containing:
+    - A field `int[] array`;
+    - Constructor `MyCircularArray(int size)`, which creates a circular array of size `size`;
+    - Constructor `MyCircularArray()`, which creates a circular array of 10 elements;
+    - Method `void add(int element)`, which adds `element` to the `array` such that,  
+    once the array reaches its maximum size, the new values overwrite the previously stored ones;
+    - Method `void reset()`, which resets all the elements in the `array` to zero.
 
-*Nota*: è possibile aggiungere campi e metodi a piacimento al fine di realizzare quanto richiesto.
+*Note*: You are allowed to add fields and methods as needed in order to implement the required functionality.

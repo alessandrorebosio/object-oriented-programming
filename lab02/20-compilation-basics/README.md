@@ -1,27 +1,27 @@
-# Organizzazione di codice sorgente e bytecode
+# Organizing Source Code and Bytecode
 
-#### FASE 1 - Compilazione in percorsi arbitrari
+#### PHASE 1 - Compilation to Arbitrary Paths
 
-1. Si osservi la struttura del progetto: la cartella `src` contiene il sorgente.
-2. Si crei una nuova cartella `bin`
-    - In Unix: usare il comando `mkdir`
-    - In Windows: usare il comando `md`
-    - non usare il file manager!
-3. Si esegua la compilazione indicando `bin` come destinazione dell'output di compilazione
-    - In Unix: `javac -d bin src/Calculator.java`
-    - In Windows: `javac -d bin src\Calculator.java`
-    - si noti il diverso separatore di percorso
-4. Si verifichi la presenza di `Calculator.class` all'interno di `bin`
-    - In Unix: `ls bin`
-    - In Windows: `dir bin`
-5. Si sposti il terminale dentro `bin` (comando `cd`)
-6. Si esegua la classe `Calculator`
+1. Observe the project structure: the `src` folder contains the source code.
+2. Create a new `bin` folder:
+    - On Unix: use the command `mkdir`
+    - On Windows: use the command `md`
+    - Do not use the file manager!
+3. Compile the code by specifying `bin` as the output destination for the compilation:
+    - On Unix: `javac -d bin src/Calculator.java`
+    - On Windows: `javac -d bin src\Calculator.java`
+    - Note the different path separator.
+4. Check that `Calculator.class` is present inside `bin`:
+    - On Unix: `ls bin`
+    - On Windows: `dir bin`
+5. Change the terminal's working directory to `bin` (use the `cd` command).
+6. Run the `Calculator` class.
 
-#### FASE 2 - Esecuzione con classpath esplicito
+#### PHASE 2 - Execution with Explicit Classpath
 
-1. Si posizioni il terminale nella cartella che contiene `src` e `bin`
-2. Da quella posizione, si esegua la classe `Calculator` usando opportunamente l'opzione `-cp` (si faccia riferimento alle slide del laboratorio)
-3. Si posizioni il terminale nella root del file system
-    - In Unix, `/`
-    - In Windows, `C:\` (o altra lettera di unità se il file non è stato scompattato in `C:`
-4. Senza cambiare la posizione del terminale, si esegua nuovamente `Calculator`
+1. Position the terminal in the folder that contains both `src` and `bin`.
+2. From this location, execute the `Calculator` class using the appropriate `-cp` option (refer to the lab slides).
+3. Move the terminal to the root of the file system:
+    - On Unix, `/`
+    - On Windows, `C:\` (or another drive letter if the file isn't located in `C:`)
+4. Without changing the terminal's location, execute `Calculator` again.

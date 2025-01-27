@@ -1,3 +1,3 @@
-# Gestione degli argomenti passati da linea di comando
+# Handling Command-Line Arguments
 
-1. Si seguano le istruzioni fornite nel commento del file sorgente fornito
+1. Follow the instructions provided in the comment section of the provided source file.
