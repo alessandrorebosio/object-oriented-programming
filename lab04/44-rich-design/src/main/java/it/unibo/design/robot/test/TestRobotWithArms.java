@@ -1,5 +1,9 @@
 package it.unibo.design.robot.test;
 
+import it.unibo.design.robot.api.RobotWithArms;
+import it.unibo.design.robot.environment.impl.RobotPosition;
+import it.unibo.design.robot.impl.BaseRobot;
+import it.unibo.design.robot.impl.RobotWithTwoArms;
 import static it.unibo.design.robot.test.Assertions.assertEquals;
 
 /**
@@ -8,7 +12,8 @@ import static it.unibo.design.robot.test.Assertions.assertEquals;
  */
 public final class TestRobotWithArms {
 
-    // Tolerance for double comparisons, to account for floating-point rounding errors  
+    // Tolerance for double comparisons, to account for floating-point rounding
+    // errors
     private static final double EPSILON = 1e-7;
 
     private static final int CYCLES = 10;
@@ -17,8 +22,6 @@ public final class TestRobotWithArms {
     }
 
     public static void main(final String[] args) {
-        // Uncomment the method
-        /*
         final RobotWithArms walle = new RobotWithTwoArms("Wall-e");
         final String wallePosition = walle + "'s position";
         final String walleItems = walle + "'s items carried";
@@ -54,6 +57,5 @@ public final class TestRobotWithArms {
         assertEquals(walleItems, 0, walle.getCarriedItemsCount());
         walle.dropDown();
         assertEquals(walleItems, 0, walle.getCarriedItemsCount());
-        */
     }
 }
