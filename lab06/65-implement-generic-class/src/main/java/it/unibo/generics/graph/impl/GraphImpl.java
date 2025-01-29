@@ -49,8 +49,8 @@ public final class GraphImpl<N> implements Graph<N> {
         }
 
         if (nodesExist(source, target)) {
-            Set<N> visited = new HashSet<>();
-            LinkedList<N> path = new LinkedList<>();
+            final Set<N> visited = new HashSet<>();
+            final LinkedList<N> path = new LinkedList<>();
             if (dfs(source, target, visited, path)) {
                 return path;
             }
@@ -59,7 +59,7 @@ public final class GraphImpl<N> implements Graph<N> {
         return Collections.emptyList(); // Se non si trova il cammino
     }
 
-    private boolean dfs(N current, N target, Set<N> visited, LinkedList<N> path) {
+    private boolean dfs(final N current, final N target, final Set<N> visited, final LinkedList<N> path) {
         visited.add(current);
         path.add(current);
 
@@ -68,7 +68,7 @@ public final class GraphImpl<N> implements Graph<N> {
         }
 
         // Esplora i nodi adiacenti
-        for (N neighbor : linkedNodes(current)) {
+        for (final N neighbor : linkedNodes(current)) {
             if (!visited.contains(neighbor)) {
                 if (dfs(neighbor, target, visited, path)) {
                     return true; // Se troviamo un cammino, restituiamo true
