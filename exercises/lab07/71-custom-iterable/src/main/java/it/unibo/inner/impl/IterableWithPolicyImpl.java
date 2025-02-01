@@ -61,6 +61,7 @@ public class IterableWithPolicyImpl<T> implements IterableWithPolicy<T> {
 
     }
 
+    @SuppressWarnings("unused")
     private class IteratorWithoPolicy implements Iterator<T> {
 
         @Override
