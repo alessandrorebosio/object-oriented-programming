@@ -1,46 +1,55 @@
 package it.unibo.es1;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LogicsImpl implements Logics {
 
-	public LogicsImpl(int size) {
-		//TODO Auto-generated constructor stub
+	private final int[] array;
+
+	public LogicsImpl(final int size) {
+		this.array = new int[size];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = i;
+		}
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'size'");
+		return this.array.length;
 	}
 
 	@Override
 	public List<Integer> values() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'values'");
+		return Arrays.stream(array)
+				.boxed()
+				.collect(Collectors.toList());
 	}
 
 	@Override
 	public List<Boolean> enablings() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'enablings'");
+		return Arrays.stream(array)
+				.mapToObj(i -> i < array.length)
+				.collect(Collectors.toList());
 	}
 
 	@Override
-	public int hit(int elem) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'hit'");
+	public int hit(final int elem) {
+		return ++this.array[elem];
 	}
 
 	@Override
 	public String result() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'result'");
+		return "<<" + Arrays.stream(array)
+				.mapToObj(String::valueOf)
+				.collect(Collectors.joining("|")) + ">>";
 	}
 
 	@Override
 	public boolean toQuit() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'toQuit'");
+		return Arrays.stream(array).allMatch(i -> i >= array.length);
 	}
 }
